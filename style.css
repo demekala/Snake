@@ -1,0 +1,126 @@
+body {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-evenly;
+}
+.map {
+  position: relative;
+  margin-top: 100px;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  justify-content: right;
+  background-color: white;
+  gap: 10px;
+  border: 3px solid gray;
+  scale: 1.5;
+  z-index: 0;
+}
+
+.snakeHead {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(58, 3, 55);
+  border-radius: 3px;
+  z-index: 100;
+}
+
+.snakeEyeOne {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  z-index: 1;
+  left: 5px;
+  top: 4px;
+}
+
+.snakeEyeTwo {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  z-index: 1;
+  left: 15px;
+  top: 4px;
+}
+
+.snakeBody {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(58, 3, 55);
+  border-radius: 3px;
+}
+
+.apple {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.gameOverScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameOverText {
+  transform: translateX(400px);
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  transform: translateX(400px);
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: xx-large;
+  width: 100%;
+  height: 50px;
+}
+
+.stats {
+  border: 2px solid gray;
+  background-color: rgb(192, 192, 192);
+  margin: 150px 50px 50px;
+
+  width: 300px;
+  height: 300px;
+  scale: 1.5;
+}
+
+.statsTitle {
+  margin-left: 100px;
+  margin-bottom: 30px;
+  color: rgb(20, 20, 20);
+}
+
+.score,
+.difficulty,
+.user,
+.highScore,
+.gameHighScore {
+  font-size: 30px;
+  color: rgb(20, 20, 20);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
